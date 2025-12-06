@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, isMobile, toggleSidebar }) => {
 
             {/* Sidebar Content */}
             <aside
-                className={`fixed md:relative z-30 h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 transition-all duration-300 ease-in-out flex flex-col justify-between
+                className={`fixed md:relative z-30 h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 transition-all duration-300 ease-in-out flex flex-col justify-between overflow-hidden
           ${isOpen ? 'w-64' : 'w-0 md:w-20'} 
           ${isMobile && !isOpen ? '-translate-x-full' : 'translate-x-0'}
         `}

@@ -142,17 +142,17 @@ const Dashboard = () => {
                             </h2>
 
                             <div className="space-y-4">
-                                <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center text-blue-600">
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl gap-4">
+                                    <div className="flex items-center gap-4 min-w-0">
+                                        <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center text-blue-600 flex-shrink-0">
                                             <Mail size={20} />
                                         </div>
-                                        <div>
+                                        <div className="min-w-0">
                                             <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Email Address</p>
-                                            <p className="text-gray-900 dark:text-white font-medium">{user?.email || 'user@example.com'}</p>
+                                            <p className="text-gray-900 dark:text-white font-medium truncate">{user?.email || 'user@example.com'}</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full dark:bg-green-900/30 dark:text-green-400">Verified</span>
+                                    <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full dark:bg-green-900/30 dark:text-green-400 w-fit">Verified</span>
                                 </div>
 
                                 <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl">
