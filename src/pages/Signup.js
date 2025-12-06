@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, User, ArrowRight, Sparkles } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { authService } from '../services/authService';
-import ThemeToggle from '../components/ThemeToggle';
 import Loader from '../components/Loader';
 
 const Signup = () => {
@@ -54,7 +53,7 @@ const Signup = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center px-4 py-12 relative overflow-hidden">
-            <ThemeToggle />
+
 
             {/* Animated Background Elements */}
             <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-300 dark:bg-indigo-900 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-30 animate-blob"></div>
