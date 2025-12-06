@@ -66,8 +66,8 @@ const Dashboard = () => {
             value: stats?.sales?.value || '0',
             change: stats?.sales?.change || 'Loading...',
             icon: TrendingUp,
-            color: 'text-purple-600',
-            bg: 'bg-purple-100 dark:bg-purple-900/20'
+            color: 'text-indigo-600',
+            bg: 'bg-indigo-100 dark:bg-indigo-900/20'
         },
         {
             label: 'Active Now',
@@ -83,22 +83,22 @@ const Dashboard = () => {
         <DashboardLayout>
             <div className="max-w-7xl mx-auto">
                 {/* Hero Section */}
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-700 to-indigo-800 text-white p-8 md:p-10 mb-8 shadow-xl">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-10 mb-8 shadow-xl">
                     <div className="relative z-10">
                         <h1 className="text-3xl md:text-4xl font-bold mb-4">
                             Welcome back, {user?.name || 'User'}! 👋
                         </h1>
-                        <p className="text-purple-100 text-lg max-w-2xl mb-6">
+                        <p className="text-slate-200 text-lg max-w-2xl mb-6">
                             Here's what's happening with your projects today. You have pending items to review.
                         </p>
-                        <button className="bg-white text-purple-700 hover:bg-purple-50 px-6 py-2.5 rounded-lg font-semibold transition-colors shadow-lg">
+                        <button className="bg-white text-slate-900 hover:bg-slate-50 px-6 py-2.5 rounded-lg font-semibold transition-colors shadow-lg">
                             View Reports
                         </button>
                     </div>
 
                     {/* Decorative Circles */}
                     <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 right-20 -mb-10 w-40 h-40 bg-purple-400 opacity-20 rounded-full blur-2xl"></div>
+                    <div className="absolute bottom-0 right-20 -mb-10 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-2xl"></div>
                 </div>
 
                 {/* Stats Grid */}
@@ -157,7 +157,7 @@ const Dashboard = () => {
 
                                 <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center text-purple-600">
+                                        <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center text-indigo-600">
                                             <Calendar size={20} />
                                         </div>
                                         <div>

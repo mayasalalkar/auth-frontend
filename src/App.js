@@ -17,7 +17,7 @@ function App() {
         <ThemeProvider>
             <AuthProvider>
                 <Router>
-                    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 transition-colors duration-300">
+                    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 transition-colors duration-300">
                         <Toaster
                             position="top-right"
                             toastOptions={{

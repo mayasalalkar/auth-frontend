@@ -13,13 +13,13 @@ const Profile = () => {
 
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
                     {/* Cover Banner */}
-                    <div className="h-32 bg-gradient-to-r from-primary-600 to-purple-600"></div>
+                    <div className="h-32 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
 
                     <div className="p-8 relative">
                         {/* Avatar */}
                         <div className="absolute -top-16 left-8">
                             <div className="w-32 h-32 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg">
-                                <div className="w-full h-full bg-gradient-to-br from-primary-500 to-purple-600 rounded-full flex items-center justify-center text-4xl font-bold text-white uppercase">
+                                <div className="w-full h-full bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-4xl font-bold text-white uppercase">
                                     {user?.name?.[0] || 'U'}
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ const Profile = () => {
                                 </div>
 
                                 <div className="p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl flex items-center gap-4">
-                                    <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center text-purple-600">
+                                    <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center text-indigo-600">
                                         <Calendar size={20} />
                                     </div>
                                     <div>

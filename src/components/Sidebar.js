@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, isMobile, toggleSidebar }) => {
                     {/* Logo Area */}
                     <div className={`h-16 flex items-center ${isOpen ? 'justify-between px-6' : 'justify-center'} border-b border-gray-100 dark:border-gray-800`}>
                         {isOpen ? (
-                            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
+                            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                                 BrandStore
                             </span>
                         ) : (
