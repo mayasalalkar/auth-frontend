@@ -8,6 +8,9 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import VerifyOTP from './pages/VerifyOTP';
 import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
+import Help from './pages/Help';
 
 function App() {
     return (
@@ -48,6 +51,30 @@ function App() {
                                 element={
                                     <PrivateRoute>
                                         <Dashboard />
+                                    </PrivateRoute>
+                                }
+                            />
+                            <Route
+                                path="/profile"
+                                element={
+                                    <PrivateRoute>
+                                        <Profile />
+                                    </PrivateRoute>
+                                }
+                            />
+                            <Route
+                                path="/settings"
+                                element={
+                                    <PrivateRoute>
+                                        <Settings />
+                                    </PrivateRoute>
+                                }
+                            />
+                            <Route
+                                path="/help"
+                                element={
+                                    <PrivateRoute>
+                                        <Help />
                                     </PrivateRoute>
                                 }
                             />
