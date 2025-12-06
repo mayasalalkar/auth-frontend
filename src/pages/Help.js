@@ -63,7 +63,7 @@ const Help = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 h-fit">
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4 md:p-6 h-fit">
                         <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2 mb-6">
                             <MessageCircle className="text-blue-600" />
                             Contact Support

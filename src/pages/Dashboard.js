@@ -83,15 +83,15 @@ const Dashboard = () => {
         <DashboardLayout>
             <div className="max-w-7xl mx-auto">
                 {/* Hero Section */}
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-10 mb-8 shadow-xl">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 md:p-10 mb-8 shadow-xl">
                     <div className="relative z-10">
-                        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                             Welcome back, {user?.name || 'User'}! 👋
                         </h1>
-                        <p className="text-slate-200 text-lg max-w-2xl mb-6">
+                        <p className="text-slate-200 text-base md:text-lg max-w-2xl mb-6">
                             Here's what's happening with your projects today. You have pending items to review.
                         </p>
-                        <button className="bg-white text-slate-900 hover:bg-slate-50 px-6 py-2.5 rounded-lg font-semibold transition-colors shadow-lg">
+                        <button className="bg-white text-slate-900 hover:bg-slate-50 px-6 py-2.5 rounded-lg font-semibold transition-colors shadow-lg text-sm md:text-base">
                             View Reports
                         </button>
                     </div>
@@ -104,19 +104,19 @@ const Dashboard = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                     {statItems.map((stat, index) => (
-                        <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700">
+                        <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700 min-w-0">
                             <div className="flex justify-between items-start mb-4">
-                                <div>
-                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400">{stat.label}</p>
-                                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-1">
+                                <div className="min-w-0">
+                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">{stat.label}</p>
+                                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-1 truncate">
                                         {loading ? <div className="h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div> : stat.value}
                                     </h3>
                                 </div>
-                                <div className={`p-3 rounded-xl ${stat.bg}`}>
+                                <div className={`p-3 rounded-xl ${stat.bg} flex-shrink-0`}>
                                     <stat.icon className={`w-5 h-5 ${stat.color}`} />
                                 </div>
                             </div>
-                            <p className="text-xs text-gray-500 dark:text-gray-400">
+                            <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                                 {loading ? (
                                     <div className="h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
                                 ) : (
