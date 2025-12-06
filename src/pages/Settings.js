@@ -34,7 +34,7 @@ const Settings = () => {
                 }
             };
 
-            const { data } = await axios.put('http://localhost:5000/api/auth/updatedetails', profileData, config);
+            const { data } = await axios.put('https://auth-backend-0v2i.onrender.com/api/auth/updatedetails', profileData, config);
 
             if (data.status === 'success') {
                 toast.success('Profile updated successfully');
@@ -66,7 +66,7 @@ const Settings = () => {
                 }
             };
 
-            const { data } = await axios.put('http://localhost:5000/api/auth/updatepassword', {
+            const { data } = await axios.put('https://auth-backend-0v2i.onrender.com/api/auth/updatepassword', {
                 currentPassword: passwordData.currentPassword,
                 newPassword: passwordData.newPassword
             }, config);

@@ -28,7 +28,7 @@ const Dashboard = () => {
                     headers: { Authorization: `Bearer ${token}` }
                 };
 
-                const { data } = await axios.get('http://localhost:5000/api/dashboard/stats', config);
+                const { data } = await axios.get('https://auth-backend-0v2i.onrender.com/api/dashboard/stats', config);
 
                 if (data.status === 'success') {
                     setStats(data.data);
